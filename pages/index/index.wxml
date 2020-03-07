@@ -1,0 +1,30 @@
+ <view class="container">
+
+    <view class="selection">
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="3000" circular="{{true}}">
+        <view wx:for="{{imgUrls}}">
+          <swiper-item >
+            <image class="swiper-item-image" src="{{item}}"></image>
+          </swiper-item>
+        </view>
+      </swiper>
+    </view>
+    
+    <view class="selection">
+      <view class="header ">
+        <text class="new-text">新品首发</text>
+      </view>
+
+      <view class="newcommodity">
+        <view class="commodity-item" wx:for="{{newCommoditys}}">
+          <image class="commodity-item-image" src="{{item.image}}"></image>
+          <text class="commodity-item-title">文章标题文章标题文章标题文章标题文章标题文章标题文章标题</text>
+          <view class="commodity-info">
+            <text class="price-info">￥159</text><text class="origin-price-info">￥10000</text><text class="sold-info">已售：321</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+</view>
+

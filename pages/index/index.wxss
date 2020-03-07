@@ -1,0 +1,59 @@
+.container{
+  padding-top: 0px;
+}
+
+.selection{
+  width: 100%;
+  padding-top: 0px; 
+  margin-bottom: 2px;
+}
+
+.swiper-item-image{
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  border:1px solid rgb(17, 17, 17);
+
+}
+
+.new-text{
+  color: red;
+  font-size: 20px;
+}
+
+.newcommodity{
+  width: 100%;
+  height: 200px;
+
+}
+
+.commodity-item-image{
+  width: 100%;
+}
+
+.commodity-item-title{
+
+}
+
+.commodity-info{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.price-info{
+  color: red;
+  font-size: 20px;
+}
+
+.origin-price-info{
+  text-decoration: line-through;
+  position: absolute;
+  left: 60px;
+  margin-bottom: 0px;
+}
