@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/shortlist/index",
     "pages/index/index",
+    "pages/shortlist/index",
     "pages/detail/index",
     "pages/my/index"
     
@@ -9,7 +9,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "电器商城",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -38,7 +38,6 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-tabbar": "../../dist/tabbar/index",

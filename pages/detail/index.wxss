@@ -1,1 +1,13 @@
-/* pages/detail/index.wxss */
+.item-detail{
+  width: 100%;
+}
+
+.video-detail{
+  width:100%;
+}
+
+.price{
+  color:red;
+  font-weight: 200;
+  
+}

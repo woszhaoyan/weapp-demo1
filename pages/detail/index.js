@@ -6,7 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    detail_active: 0,
+    item_detail: { 
+      "main_img": "http://q6v0uxmjt.bkt.clouddn.com/detail9.jpg", 
+      "details": [
+        "http://q6v0uxmjt.bkt.clouddn.com/detail1.jpg", 
+        "http://q6v0uxmjt.bkt.clouddn.com/detail2.jpg", 
+        "http://q6v0uxmjt.bkt.clouddn.com/detail3.jpg", 
+        "http://q6v0uxmjt.bkt.clouddn.com/detail4.jpg", 
+        "http://q6v0uxmjt.bkt.clouddn.com/detail5.jpg",
+        ], 
+      },
   },
 
   /**
@@ -63,6 +73,32 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onClickIcon() {
+    consule.log('点击图标');
+  },
+
+  onClickButton() {
+    console.log('点击按钮');
+  },
+  detailOnChange(event) {
+    // wx.showToast({
+    //   title: `切换到标签 ${event.detail.name}`,
+    //   icon: 'none'
+    // });
+  },
+
+  onBuys: function(){
+    wx.navigateTo({
+      url: '../../pages/shortlist/index',
+      success:function(res){
+        console.log("zhaoyan success")
+      },
+      fail: function(res){
+        
+        console.log(res)
+      }
+    })
   }
 
 })

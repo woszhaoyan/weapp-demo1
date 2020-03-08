@@ -1,5 +1,38 @@
-<!--pages/detail/index.wxml-->
-<text>pages/detail/index.wxml</text>
+ <view class="container">
+    <van-image
+      width="375px"
+      height="375px"
+      src="{{item_detail.main_img}}"
+    />
+  <view> 
+    <view class="price">¥21800.00</view>
+    <view class="title">老板集成油烟机(消毒柜款)5908s+90B8X</view>
+    商品热度<van-rate value="4" />
+  </view>
 
+  <view class="item-detail">
+    <van-tabs active="{{ detail_active }}" bind:change="detailOnChange">
+      <van-tab title="商品详情">
+        <view wx:for="{{item_detail.details}}" wx:for-item="detail">
+          <van-image
+            width="375px"
+            height="650"
+            src="{{detail}}"
+          />
+        </view>
+      </van-tab>
+      <van-tab title="全景模型">
+        <video class="video-detail" id="myVideo" src="http://q6v0uxmjt.bkt.clouddn.com/1583652657069350.mp4" controls></video>
+      </van-tab>
+    </van-tabs>
+  </view>
 
+  <view>
+    <van-goods-action>
+      <van-goods-action-icon icon="service-o" text="客服" dot />
+      <van-goods-action-button width="100px" text="加入购物车" type="warning" size="small" />
+      <van-goods-action-button text="立即购买" bindtap="onBuys" size="small"/>
+    </van-goods-action>
+  </view>
 
+</view>

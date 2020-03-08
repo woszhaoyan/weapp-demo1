@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-goods-action": "../../dist/goods-action/index",
+    "van-goods-action-icon": "../../dist/goods-action-icon/index",
+    "van-goods-action-button": "../../dist/goods-action-button/index",
+    "van-divider": "../../dist/divider/index",
+    "van-rate": "../../dist/rate/index",
+    "van-image": "../../dist/image/index",
+    "van-tab": "../../dist/tab/index",
+    "van-tabs": "../../dist/tabs/index"
+  }
 }
