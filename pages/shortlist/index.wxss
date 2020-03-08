@@ -12,5 +12,5 @@
 
 .goods-list{
   width: 100%;
-  border-bottom: 2px solid #999;
+  border-bottom: 6px solid #ddd;
 }

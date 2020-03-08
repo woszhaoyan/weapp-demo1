@@ -20,9 +20,10 @@
       <view class="newcommodity">
         <view class="commodity-item" wx:for="{{newCommoditys}}">
           <image class="commodity-item-image" src="{{item.image}}"></image>
-          <text class="commodity-item-title">文章标题文章标题文章标题文章标题文章标题文章标题文章标题</text>
+          <text class="commodity-item-model">{{item.model}}</text>
+          <text class="commodity-item-title">{{item.title}}</text>
           <view class="commodity-info">
-            <text class="price-info">￥159</text><text class="origin-price-info">￥10000</text><text class="sold-info">已售：321</text>
+            <text class="price-info">￥159</text><text class="sold-info">已售：321</text>
           </view>
         </view>
       </view>
