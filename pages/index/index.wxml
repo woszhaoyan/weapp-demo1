@@ -12,13 +12,13 @@
       </swiper>
     </view>
     
-    <view class="selection">
+    <view class="selection1">
       <view class="header ">
         <text class="new-text">新品首发</text>
       </view>
 
       <view class="newcommodity">
-        <view class="commodity-item" wx:for="{{newCommoditys}}">
+        <view class="commodity-item" wx:for="{{newCommoditys}}"  bindtap="toDetail">
           <image class="commodity-item-image" src="{{item.image}}"></image>
           <text class="commodity-item-model">{{item.model}}</text>
           <text class="commodity-item-title">{{item.title}}</text>
