@@ -1,4 +1,6 @@
  <view class="container">
+    
+    <van-search class="search" placeholder="请输入搜索关键词" value="{{ value }}" input-align="center" />
 
     <view class="selection">
       <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="5000" duration="3000" circular="{{true}}">

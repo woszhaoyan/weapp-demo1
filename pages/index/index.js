@@ -9,7 +9,8 @@ Page({
       { "image": "../../images/zy.jpg", "title": "", "original_price": 1000, "price": 500, "sold": 50 },
       { "image": "../../images/zy.jpg", "title": "", "original_price": 1000, "price": 500, "sold": 50 },
       { "image": "../../images/zy.jpg", "title": "", "original_price": 1000, "price": 500, "sold": 50 }],
-  }
-  
+  },
+
+
   
 })

@@ -1,1 +1,16 @@
 /* pages/shortlist/index.wxss */
+
+.container{
+  padding-top: 10px;
+  width: 100%;
+}
+
+.goods{
+  width: 100%;
+  
+}
+
+.goods-list{
+  width: 100%;
+  border-bottom: 2px solid #999;
+}

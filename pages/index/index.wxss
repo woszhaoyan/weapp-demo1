@@ -2,6 +2,10 @@
   padding-top: 0px;
 }
 
+.search{
+  width: 100%;
+}
+
 .selection{
   width: 100%;
   padding-top: 0px; 

@@ -1,9 +1,15 @@
 <view class="container">
 
   <!-- 购物车的商品列表 -->
-  <view wx:if="{{goods.length!=0}}">
-    <view wx:for="{{goods}}">
-      <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ item.image }}" />
+  <view class="goods" wx:if="{{goods.length!=0}}">
+    <view class="goods-list" wx:for="{{goods}}">
+      <!-- <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ item.image }}" /> -->
+      
+      <van-swipe-cell type="primary" id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close bind:close="onClose">
+        <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="{{ item.image }}" />
+        <view slot="right">删除</view>
+      </van-swipe-cell> 
+      
     </view>
   </view>
   <view wx:else>

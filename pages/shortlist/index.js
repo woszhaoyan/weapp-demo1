@@ -1,4 +1,6 @@
 // pages/shortlist/index.js
+import Dialog from '../../dist/dialog/dialog';
+
 Page({
 
   /**
@@ -12,6 +14,21 @@ Page({
     checked: false
   },
 
+  onLoad: function () {
+    wx.setNavigationBarTitle(
+      {
+        title: "购物车",
+        success: function (res) {
+          console.log("success")
+        }
+      }
+    )
+  },
+
+  onReady: function () {
+    wx.hideNavigationBarLoading();
+  },
+
   onChange(event) {
     this.setData({
       checked: event.detail
@@ -21,6 +38,23 @@ Page({
   onClickButton:function(){
     var that = this.data.isloading;
     this.setData({isloading : !that})
+  },
+
+  onClose(event) {
+    const { position, instance } = event.detail;
+    switch (position) {
+      case 'left':
+      case 'cell':
+        instance.close();
+        break;
+      case 'right':
+        Dialog.confirm({
+          message: '确定删除吗？'
+        }).then(() => {
+          instance.close();
+        });
+        break;
+    }
   }
 
 })
